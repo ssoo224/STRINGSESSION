@@ -1,0 +1,41 @@
+{
+  "name": "SOURCE HUNTER STRING SESSION BOT",
+  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
+  "logo": "https://telegra.ph/file/e3894160845418ad01229.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "تــــوكــن الــــبوت من @BotFather",
+            "required": true
+        },  
+        "MUST_JOIN": {
+            "description": "قناة او جــــروب الاشــتراك الاجباري بدون@": true      
+        }, 
+        "MONGO_URL": {
+            "description": "mongo db url here",
+            "required": true
+        },
+        "API_ID": {
+            "description": "الابي اي ايدي ا",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "ايــــديــك.",
+            "required": true
+        }, 
+        "API_HASH": {
+            "description": "الابي اي هاش",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
